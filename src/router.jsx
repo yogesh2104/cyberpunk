@@ -5,6 +5,8 @@ import PublicLayout from "./layouts/PublicLayout";
 import Login from "./view/login";
 import NotFound from "./view/not-found";
 import Signup from "./view/sign-up";
+import MainLayout from "./layouts/main";
+import ProfilePage from "./view/profile";
 
 const router = createBrowserRouter([
     {
@@ -13,7 +15,11 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <div className="p-4"> Dashboard Content (Protected) </div> // Placeholder until dashboard is ready
+                element: <MainLayout />
+            },
+            {
+                path: '/profile',
+                element: <ProfilePage />
             },
         ]
     },
