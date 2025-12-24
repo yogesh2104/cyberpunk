@@ -7,6 +7,7 @@ import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import GlassSurface from "@/components/GlassSurface";
 import ConfettiEffect from "@/components/ConfettiEffect";
+import ModuleUnlockAnimation from "@/components/ModuleUnlockAnimation";
 import { Home, User, Trophy, BookOpen } from "lucide-react";
 import ClickSpark from "@/components/ClickSpark";
 
@@ -77,7 +78,7 @@ export default function ProtectedLayout() {
                         borderRadius={20}
                         height={64}
                         backgroundOpacity={0.48}
-                        displace={3.0}
+                        displace={5.0}
                         borderWidth={1}
                         style={{
                             transition: 'width 200ms cubic-bezier(0.4, 0, 0.2, 1)'
@@ -91,6 +92,7 @@ export default function ProtectedLayout() {
                 </div>
 
                 <ConfettiEffect />
+                <ModuleUnlockAnimation />
             </div>
         </ClickSpark>
     );

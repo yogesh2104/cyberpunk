@@ -31,10 +31,10 @@ export const CyberpunkDashboard = () => {
 
     return (
         <div className="relative w-full h-full flex flex-col p-4 gap-4 ">
-            <div className="flex-1 grid grid-cols-1 lg:grid-cols-12 min-h-0">
+            <div className="flex-1 grid grid-cols-1 lg:grid-cols-12 min-h-0 gap-6">
                 <div className="lg:col-span-7 xl:col-span-8 flex flex-col gap-4 overflow-hidden">
                     <div className="flex-1 overflow-y-auto pr-2 custom-scrollbar">
-                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 pb-4 px-2 mt-3">
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6 pb-4 px-2 mt-3">
                             {modules.map((module) => {
                                 const status = player.moduleStatus[module.id] || "locked";
                                 const isLocked = status === "locked";
@@ -62,7 +62,7 @@ export const CyberpunkDashboard = () => {
                 </div>
 
                 <div className="lg:col-span-5 xl:col-span-4 flex flex-col gap-4 overflow-hidden h-fit mt-3">
-                    <div className="flex-1 rounded-sm border border-cyan-500/20 bg-slate-950/80 shadow-xl shadow-cyan-500/5 backdrop-blur-sm overflow-hidden flex flex-col">
+                    <div className="flex-1 border border-cyan-500/20 bg-slate-950/80 shadow-xl shadow-cyan-500/5 backdrop-blur-sm overflow-hidden flex flex-col">
                         <ModuleContentPanel />
                     </div>
                 </div>
