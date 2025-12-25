@@ -10,6 +10,7 @@ import ConfettiEffect from "@/components/ConfettiEffect";
 import ModuleUnlockAnimation from "@/components/ModuleUnlockAnimation";
 import { Home, User, Trophy, BookOpen } from "lucide-react";
 import ClickSpark from "@/components/ClickSpark";
+import { Meteors } from "@/components/ui/meteors";
 
 const navLinks = [
     {
